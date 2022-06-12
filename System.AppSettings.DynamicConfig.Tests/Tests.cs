@@ -34,7 +34,7 @@ namespace System.AppSettings.DynamicConfig.Tests
 			Assert.Equal("The string",stringValue);
 			Assert.Equal(42,intValue);
 			Assert.Equal("C92A574B-98E8-4371-A193-C86F601433DC", guidValue.ToString().ToUpperInvariant());
-			Assert.Equal("2022-06-11", dateValue.ToShortDateString());
+			Assert.Equal(new DateTime(2022,6,11), dateValue);
 
             // cast
             var dateVal = (DateTime)AppSettings<DateTime>.Get.DateValue;
@@ -44,8 +44,7 @@ namespace System.AppSettings.DynamicConfig.Tests
 		    _testOutputHelper.WriteLine($"date val: {dateVal.ToShortDateString()}");
 
 		    Assert.Equal(42, intVal);
-		    Assert.Equal("2022-06-11", dateVal.ToShortDateString());
-
+		    Assert.Equal(new DateTime(2022, 6, 11), dateVal);
 
         }
     }
