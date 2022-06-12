@@ -17,8 +17,6 @@ public class Tests
 	{
 		string path = AppSettings<string>.Get.Path;
 		Assert.NotNull(path);
-		string os = AppSettings<string>.Get.OS;
-		Assert.NotNull(os);
 	}
 
 	[Fact]
