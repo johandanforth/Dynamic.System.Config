@@ -13,7 +13,16 @@ public class Tests
 	}
 
 	[Fact]
-	public void ReadValues()
+	public void GetEnvironmentVariables()
+	{
+		string path = AppSettings<string>.Get.Path;
+		Assert.NotNull(path);
+		string os = AppSettings<string>.Get.OS;
+		Assert.NotNull(os);
+	}
+
+	[Fact]
+	public void GetAppSettings()
 	{
 		// implicit conversions from dynamic to string/int/...
 		string stringValue = AppSettings<string>.Get.StringValue;

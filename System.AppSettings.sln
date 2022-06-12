@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.AppSettings.DynamicC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.AppSettings.DynamicConfig.Tests", "System.AppSettings.DynamicConfig.Tests\System.AppSettings.DynamicConfig.Tests.csproj", "{2449A1A1-3FE0-48C2-8F51-25B9D98EB429}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{BD25C996-77BD-4D25-B46E-9D190419311A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
