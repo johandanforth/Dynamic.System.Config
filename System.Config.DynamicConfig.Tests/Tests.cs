@@ -1,7 +1,8 @@
 ﻿using Xunit;
 using Xunit.Abstractions;
 
-namespace System.AppSettings.DynamicConfig.Tests;
+
+namespace System.Config.DynamicConfig.Tests;
 
 public class Tests
 {
@@ -11,22 +12,24 @@ public class Tests
 	{
 		Console = testOutputHelper;
 	}
+	
 
 	[Fact]
-	public void GetEnvironmentVariables()
+	public void GetTypedEnvironmentVariables()
 	{
-		string path = AppSettings<string>.Get.Path;
+		string path = Config<string>.Get.Path;
 		Assert.NotNull(path);
 	}
 
+	
 	[Fact]
-	public void GetAppSettings()
+	public void GetTypedAppSettings()
 	{
 		// implicit conversions from dynamic to string/int/...
-		string stringValue = AppSettings<string>.Get.StringValue;
-		int intValue = AppSettings<int>.Get.IntValue;
-		Guid guidValue = AppSettings<Guid>.Get.GuidValue;
-		DateTime dateValue = AppSettings<DateTime>.Get.DateValue;
+		string stringValue = Config<string>.Get.StringValue;
+		int intValue = Config<int>.Get.IntValue;
+		Guid guidValue = Config<Guid>.Get.GuidValue;
+		DateTime dateValue = Config<DateTime>.Get.DateValue;
 
 		Console.WriteLine($"string val: {stringValue}");
 		Console.WriteLine($"int val: {intValue}");
@@ -41,8 +44,8 @@ public class Tests
 		Assert.Equal(new DateTime(2022, 6, 11), dateValue);
 
 		// cast
-		var dateVal = (DateTime)AppSettings<DateTime>.Get.DateValue;
-		var intVal = (int)AppSettings<int>.Get.IntValue;
+		var dateVal = (DateTime)Config<DateTime>.Get.DateValue;
+		var intVal = (int)Config<int>.Get.IntValue;
 
 		Console.WriteLine($"int val: {intVal}");
 		Console.WriteLine($"date val: {dateVal.ToShortDateString()}");

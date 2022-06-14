@@ -33,7 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\System.AppSettings.DynamicConfig\System.AppSettings.DynamicConfig.csproj" />
+	  <ProjectReference Include="..\System.Config.DynamicConfig\System.Config.DynamicConfig.csproj" />
 	</ItemGroup>
 
 </Project>

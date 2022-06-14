@@ -1,4 +1,5 @@
 ﻿// ReSharper disable CheckNamespace
+
 using System.Dynamic;
 
 using Microsoft.Extensions.Configuration;
@@ -7,11 +8,12 @@ using Microsoft.Extensions.Hosting;
 
 namespace System
 {
-	public static class AppSettings<TReturn>
+
+	public static partial class Config<TReturn>
 	{
 		public static dynamic Get = new DynamicConfig<TReturn>();
 
-		private class DynamicConfig<TValue> : DynamicObject
+		public class DynamicConfig<TValue> : DynamicObject
 		{
 			private readonly IConfiguration _config;
 
@@ -27,5 +29,6 @@ namespace System
 				return true;
 			}
 		}
-	}
+
+    }
 }
