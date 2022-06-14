@@ -17,16 +17,16 @@ nuget install System.AppSettings
 ## Usage
 
 Install the package, then just get the value
-from `System.AppSettings<T>` like so:
+from `System.Config<T>` like so:
 
 ``` csharp
 // implicit conversions from dynamic to string/int/...
-string stringValue = AppSettings<string>.Get.StringValue;
-int intValue = AppSettings<int>.Get.IntValue;
-Guid guidValue = AppSettings<Guid>.Get.GuidValue;
-DateTime dateValue = AppSettings<DateTime>.Get.DateValue;
+string stringValue = Config<string>.Get.StringValue;
+int intValue = Config<int>.Get.IntValue;
+Guid guidValue = Config<Guid>.Get.GuidValue;
+DateTime dateValue = Config<DateTime>.Get.DateValue;
 
 // cast
-var dateVal = (DateTime)AppSettings<DateTime>.Get.DateValue;
-var intVal = (int)AppSettings<int>.Get.IntValue;
+var dateVal = (DateTime)Config<DateTime>.Get.DateValue;
+var intVal = (int)Config<int>.Get.IntValue;
 ```
