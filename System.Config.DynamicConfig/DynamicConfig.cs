@@ -1,5 +1,4 @@
 ﻿// ReSharper disable CheckNamespace
-
 using System.Dynamic;
 
 using Microsoft.Extensions.Configuration;
@@ -8,10 +7,11 @@ using Microsoft.Extensions.Hosting;
 
 namespace System
 {
-
-	public static partial class Config<TReturn>
+	public static class Config<TReturn>
 	{
-		public static dynamic Get = new DynamicConfig<TReturn>();
+#pragma warning disable CA1000 // Do not declare static members on generic types
+		public static dynamic Get { get; } = new DynamicConfig<TReturn>();
+#pragma warning restore CA1000 // Do not declare static members on generic types
 
 		public class DynamicConfig<TValue> : DynamicObject
 		{
@@ -29,6 +29,5 @@ namespace System
 				return true;
 			}
 		}
-
-    }
+	}
 }

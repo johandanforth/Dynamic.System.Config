@@ -1,34 +1,42 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2;netstandard2.1</TargetFrameworks>
-		<PackageId>System.Config</PackageId>
+		<TargetFrameworks>netstandard2;netstandard21;net5.0</TargetFrameworks>
+		<PackageId>Dynamic.System.Config</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Johan Danforth</Authors>
 		<Company>IRM Design AB</Company>
-		<PackageTags>appsettings;iconfiguration;configuration;getvalue</PackageTags>
-		<Description>
-Get appSettings.jsonm , environment and other dotnet core settings dynamically/easily without having to setup the IConguration or IHost stuff.
-		</Description>
-		<Title>System.Config Simple dotnet core appSettings reader</Title>
-		<Product>System.Config</Product>
+		<PackageTags>appsettings;iconfiguration;dynamic;config;enviroment;configuration;getvalue;system.config</PackageTags>
+		<Description>Get appSettings.json, environment vars and other dotnet core settings dynamically/easily without having to setup the IConguration or IHost.</Description>
+		<Title>Dynamic.System.Config</Title>
+		<Product>Dynamic.System.Config</Product>
 		<Copyright>Johan Danforth</Copyright>
 		<PackageProjectUrl>https://github.com/johandanforth/System.Config</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/johandanforth/System.Config</RepositoryUrl>
 		<PackageReleaseNotes>First release</PackageReleaseNotes>
 		<PackageLicenseFile>licence.txt</PackageLicenseFile>
+		<PackageIcon>Dynamic.System.Config.png</PackageIcon>
+		<RepositoryType>git</RepositoryType>
+		<IncludeSymbols>True</IncludeSymbols>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\licence.txt">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\Dynamic.System.Config.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\licence.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>

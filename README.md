@@ -1,8 +1,9 @@
-# System.AppSettings
+# Dynamic.System.Config
 
-A dead simple way to read appSettings.json values
+A dead simple way to read both Environment and 
+appSettings.json values
 dynamically. Works great in Console apps and 
-smaller, quicker applications that doesn't need 
+smaller, quicker applications that won't benefit from
 the overheade of typed classes read from 
 IConfig.
 
@@ -11,12 +12,15 @@ IConfig.
 Install from Nuget with
 
 ``` 
-nuget install System.AppSettings
+nuget install Dynamic.System.Config
 ```
 
 ## Usage
 
-Install the package, then just get the value
+The code uses the `System` namespace, so no specific `usings` 
+should be necessary.
+
+Install the package (se above), then simply get the value
 from `System.Config<T>` like so:
 
 ``` csharp

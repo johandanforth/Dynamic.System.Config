@@ -1,18 +1,17 @@
 ﻿using Xunit;
 using Xunit.Abstractions;
 
-
 namespace System.Config.DynamicConfig.Tests;
 
 public class Tests
 {
-	private ITestOutputHelper Console { get; }
-
 	public Tests(ITestOutputHelper testOutputHelper)
 	{
 		Console = testOutputHelper;
 	}
-	
+
+	private ITestOutputHelper Console { get; }
+
 
 	[Fact]
 	public void GetTypedEnvironmentVariables()
@@ -21,7 +20,7 @@ public class Tests
 		Assert.NotNull(path);
 	}
 
-	
+
 	[Fact]
 	public void GetTypedAppSettings()
 	{
