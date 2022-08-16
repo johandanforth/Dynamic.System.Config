@@ -25,12 +25,9 @@ from `System.Config<T>` like so:
 
 ``` csharp
 // implicit conversions from dynamic to string/int/...
-string stringValue = Config<string>.Get.StringValue;
-int intValue = Config<int>.Get.IntValue;
-Guid guidValue = Config<Guid>.Get.GuidValue;
-DateTime dateValue = Config<DateTime>.Get.DateValue;
+var stringValue = Config<string>.Get.StringValue;
+var intValue = Config<int>.Get.IntValue;
+var guidValue = Config<Guid>.Get.GuidValue;
+var dateValue = Config<DateTime>.Get.DateValue;
 
-// cast
-var dateVal = (DateTime)Config<DateTime>.Get.DateValue;
-var intVal = (int)Config<int>.Get.IntValue;
 ```
