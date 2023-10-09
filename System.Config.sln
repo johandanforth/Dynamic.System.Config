@@ -5,6 +5,7 @@ VisualStudioVersion = 17.3.32519.111
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{BD25C996-77BD-4D25-B46E-9D190419311A}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 		licence.txt = licence.txt
 		README.md = README.md
