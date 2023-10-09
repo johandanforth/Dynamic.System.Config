@@ -8,14 +8,16 @@
 		<Authors>Johan Danforth</Authors>
 		<Company>IRM Design AB</Company>
 		<PackageTags>appsettings;iconfiguration;dynamic;config;enviroment;configuration;getvalue;system.config</PackageTags>
-		<Description>Get appSettings.json, environment vars and other dotnet core settings dynamically/easily without having to setup the IConguration or IHost.</Description>
+		<Description>Get appSettings.json, environment vars and other dotnet core 
+			settings dynamically/easily without having to setup the IConguration or IHost.
+			Now with a better AppSettings.Get.Key method.</Description>
 		<Title>Dynamic.System.Config</Title>
 		<Product>Dynamic.System.Config</Product>
 		<Copyright>Johan Danforth</Copyright>
 		<PackageProjectUrl>https://github.com/johandanforth/System.Config</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/johandanforth/System.Config</RepositoryUrl>
-		<PackageReleaseNotes>First release</PackageReleaseNotes>
+		<PackageReleaseNotes>Second release</PackageReleaseNotes>
 		<PackageLicenseFile>licence.txt</PackageLicenseFile>
 		<PackageIcon>Dynamic.System.Config.png</PackageIcon>
 		<RepositoryType>git</RepositoryType>
