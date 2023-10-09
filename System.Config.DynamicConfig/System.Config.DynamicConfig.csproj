@@ -4,7 +4,7 @@
 		<TargetFrameworks>netstandard2;netstandard21;net6.0</TargetFrameworks>
 		<LangVersion>10</LangVersion>
 		<PackageId>Dynamic.System.Config</PackageId>
-		<Version>1.0.0</Version>
+		<Version>2.0.0</Version>
 		<Authors>Johan Danforth</Authors>
 		<Company>IRM Design AB</Company>
 		<PackageTags>appsettings;iconfiguration;dynamic;config;enviroment;configuration;getvalue;system.config</PackageTags>
